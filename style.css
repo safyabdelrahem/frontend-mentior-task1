@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: black;
+}
+.container{
+    max-width: 375px;
+    border: 1px solid black;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  hsl(0, 0%, 8%);
+    border-radius: 10px;
+   
+}
+
+.container img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+   margin-bottom: 20px;
+}
+.container h2{
+    color: white;
+}
+.container h4{
+    color: hsl(75, 94%, 57%);
+    margin-top: 10px;
+}
+.container p{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.container .buton{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+.container .buton button{
+    padding: 9px 80px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    
+}
+.container .buton button:hover{
+    background-color: hsl(75, 94%, 57%);
+    cursor: pointer;
+}
+/* Responsive Design */
+
+/* For mobile screens */
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+
+  
+ 
+}
